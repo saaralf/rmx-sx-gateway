@@ -7,8 +7,8 @@ Wants=network-online.target
 Type=simple
 # Installed by scripts/install.sh; path may be adjusted by the installer.
 ExecStartPre=/bin/sleep 2
-ExecStart=/opt/rmx-sx-wlan-gateway/.venv/bin/python -m rmx_sx_gateway.main -c /etc/rmx-sx-gateway/gateway.yaml
-WorkingDirectory=/opt/rmx-sx-wlan-gateway
+ExecStart=/opt/rmx-sx-gateway/.venv/bin/python -m rmx_sx_wlan_gateway.main -c /etc/rmx-sx-gateway/gateway.yaml
+WorkingDirectory=/opt/rmx-sx-gateway
 Restart=on-failure
 RestartSec=5
 User=rmxsx

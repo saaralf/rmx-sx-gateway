@@ -17,10 +17,12 @@ from typing import Any, Dict, List, Optional
 from pydantic import BaseModel, ConfigDict, Field, ValidationError, field_validator
 
 from .models import BusType, Direction, LocoRef
+from . import __version__
 
 PROTOCOL_VERSION = 1
 SERVER_NAME = "rmx-sx-gateway"
-SERVER_VERSION = "0.1.0"
+# Gateway-Version als Single Source of Truth aus __version__ (nicht dupplizieren).
+SERVER_VERSION = __version__
 MAX_MESSAGE_SIZE = 16384  # hard cap, also enforced by the ws server
 
 
