@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.eggs/
+
+# OS
+.DS_Store
+*~
+.idea/
+.vscode/
+
+# Pi-spezifisch (nicht im Repo)
+config/local_secrets.yaml
+*.log
+
+# ESP32-Spiegel (gehoert ins eigene Repo rmx-sx-wlan-gateway)
+esp32/
